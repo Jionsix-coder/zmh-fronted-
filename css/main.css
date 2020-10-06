@@ -8,9 +8,9 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background:;
   position: relative;
   font-weight:400px;
+  background-color: #cdcdb1;
 }
 
 /**logo**/
@@ -48,10 +48,8 @@ a {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
 }
-
 .btn-seemore{
-  margin-left: 380px;
-  margin-bottom: 10px;
+  margin-left:59%;
 }
 
 .btn:hover, 
@@ -84,7 +82,7 @@ a#scrollUp i{
 **************************/
 
 .header_top {
-  background: none repeat scroll 0 0 #F0F0E9;
+  background: none repeat scroll 0 0 white;
 }
 
 .contactinfo ul li:first-child{
@@ -110,6 +108,16 @@ a#scrollUp i{
   padding:0px;
 }
 
+.pocket-money{
+  margin-top:20px;
+}
+
+.pocket-money p{
+  font-size:15px;
+  font-weight:bold;
+  color:#025928;
+
+}
 
 .social-icons ul li{
 	display:inline-block;
@@ -284,6 +292,23 @@ a#scrollUp i{
   background-position: 130px;
 }
 
+.code-box{
+  height:40px;
+}
+.code-box p{
+  width:100px;
+}
+.code-box input{
+  background: white;
+  border: medium none;
+  color: #B2B2B2;
+  font-family: 'roboto';
+  font-size: 12px;
+  font-weight: 300;
+  height: 25px;
+  padding-left: 10px;
+  width: 200px;
+}
 
 /*  Dropdown menu*/
 
@@ -316,6 +341,13 @@ ul.sub-menu {
 	display: none;
 	z-index: 999;
 }
+
+.delivery-p b{
+  justify-content: center;
+  color: red;
+  font-size:15px;
+}
+
 
 .dropdown ul.sub-menu li .active{
   color: #FDB45E;
@@ -362,7 +394,7 @@ ul.sub-menu {
 **************************/
 
 #footer {
-  background: #F0F0E9;
+  background: white;
 }
 
 
@@ -596,10 +628,15 @@ ul.sub-menu {
 	  background: #FE980F;
 }
 
-.item {
-  padding-left: 100px;
+.discount-h3{
+  font-size:20px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  height:40px;
+  padding-top:5px;
+  border: red 2px solid;
 }
-
 
 .pricing {
   position: absolute;
@@ -608,14 +645,15 @@ ul.sub-menu {
 }
 
 .girl {
-  margin-left: 0;
+  width:100%;
+  height:200px;
 }
 
 .item h1 {
   color: #B4B1AB;
   font-family: abel;
   font-size: 48px;
-  margin-top: 115px;
+  margin-top:70px;
 }
 
 .item h1 span {
@@ -646,7 +684,6 @@ ul.sub-menu {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 300;
-  margin-top: 23px;
 }
 
 
@@ -740,13 +777,17 @@ h2.title:before{
 .category-products .panel-default .panel-heading .panel-title a {
   color: #696763;
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+  font-size: 17px;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 .panel-group .panel-heading + .panel-collapse .panel-body {
   border-top: 0 none;
+}
+
+.panel-body ul li{
+  padding-top: 10px;
 }
 
 .category-products .badge {
@@ -772,7 +813,7 @@ h2.title:before{
 .panel-body ul li a {
   color: #696763;
   font-family: 'Roboto', sans-serif;
-  font-size: 12px;
+  font-size: 15px;
   text-transform: uppercase;
 }
 
@@ -858,7 +899,41 @@ h2.title {
   margin: 0 15px;
   text-transform: uppercase;
   margin-bottom: 30px;
+  padding-top: 10px;
   position: relative;
+}
+
+.title-popular{
+  color: #FE980F;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 15px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  padding-top: 5px;
+  position: relative;
+}
+.title-popular:before{
+  content: " ";
+	position: absolute;
+	background: #fff;
+	bottom: -10px;
+	width: 220px;
+	height: 35px;
+	z-index: -1;
+	left: 50%;
+  margin-left: -200px;
+}
+.title-popular:after{
+  content: " ";
+  position: absolute;
+  border: 1px solid #f5f5f5;
+  bottom:8px;
+  left: 0;
+  width: 100%;
+  height: 0;
+  z-index: -2;
 }
 
 .product-image-wrapper{
@@ -875,6 +950,19 @@ h2.title {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.discount-p{
+  color:white;
+  position: absolute;
+  top:0;
+  right:0;
+  width:45px;
+  height:25px;
+  padding-top: 4px;
+  font-size:16px;
+  text-align:center;
+  background-color: red;
 }
 
 .productinfo h2{
@@ -1012,6 +1100,13 @@ h2.title {
   overflow: hidden;
 }
 
+.nav-tabs-seemore{
+  background: #FE980F;
+  border: 0 none;
+  border-radius: 0;
+  float:right !important;
+}
+
 .category-tab ul {
   background: #40403E;
   border-bottom: 1px solid #FE980F;
@@ -1024,7 +1119,8 @@ h2.title {
 .category-tab ul li a {
   border: 0 none;
   border-radius: 0;
-  color: #B3AFA8;
+  color: black;
+  font-weight: bolder;
   display: block;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -1043,7 +1139,8 @@ h2.title {
   -moz-border-top-colors: none;
   background-color: #FE980F;
   border:0px;
-  color: #FFFFFF;
+  color: black;
+  font-weight: bolder;
   cursor: default;
   margin-right:0;
   margin-left:0;
@@ -1268,10 +1365,10 @@ h2.title {
   color: #FE980F;
   float: left;
   font-family: 'Roboto', sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 700;
   margin-right: 20px;
-  margin-top: 0px;
+  margin-top: 5px;
 }
 .product-information span input {
   border: 1px solid #DEDEDC;
@@ -1584,7 +1681,7 @@ h2.title {
 #cart_items .cart_info .cart_menu {
   background: #FE980F;
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
   font-family: 'Roboto', sans-serif;
   font-weight: normal;
 }
@@ -1632,18 +1729,18 @@ h2.title {
 
 #cart_items .cart_info .cart_price p {
   color:#696763;
-  font-size: 18px
+  font-size: 15px;
 }
 
 
 #cart_items .cart_info .cart_total_price {
   color: #FE980F;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .cart_product {
   display: block;
-  margin: 15px -70px 10px 25px;
+  margin: 15px -0px 10px 25px;
 }
 
 .cart_quantity_button a {
@@ -1795,9 +1892,6 @@ h2.title {
   margin-top: 18px;
   border: none;
   padding: 5px 15px;
-}
-.update{
-    margin-left: 40px;
 }
 
 .check_out {
